@@ -10,6 +10,10 @@ let
     virtualenv
     ghp-import
     ipython
+    ipykernel
+    jupyter
+    attrs
+    matplotlib
     numpy
     scipy
     pandas
