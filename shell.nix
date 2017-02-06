@@ -19,6 +19,8 @@ let
     pandas
   ];
 
+  fingerprint = callPackage ./fingerprint_matching.nix {};
+
 in
 
 stdenv.mkDerivation {
@@ -26,7 +28,7 @@ stdenv.mkDerivation {
   buildInputs = [
     pythonTools
     pandoc
-  ];
+  ] ++ fingerprint;
   shellHook = ''
     # https://github.com/pikajude/darwinixpkgs/blob/master/doc/languages-frameworks/python.md
     # fixes: ZIP does not support timestamps before 1980
