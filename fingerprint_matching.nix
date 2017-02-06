@@ -16,12 +16,3 @@ in
 
 [ pythonTools nbis ]
 
-# # stdenv.mkDerivation {
-# buildEnv {
-#   name = "nbis_fingerprint_matching";
-#   paths = [
-#     pythonTools
-#     nbis
-#     sqlite
-#   ];
-# }
